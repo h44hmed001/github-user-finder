@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.title{
+    color: red;
+}
+.badge{
+    background-color: red;
+    border-radius:10px ;
+    width: fit-content;
+    font-size: 13px;
+}
+.repos{
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.315);
+    margin:20px;
+    transition: all ease 0.3s;
+}
+
+.right{
+    display:flex;
+    gap:15px;
+}
+.reposCont{
+    width: 100%;
+}
+.repos:hover{
+    background-color: rgba(255, 0, 0, 0.205);
+}
+
+.a:link {
+    text-decoration: none;
+    color:white
+  }
+  
+  .a:visited {
+    text-decoration: none;
+    color:white;
+  }
+  
+  .a:hover {
+    text-decoration: none;
+    
+  }
+  
+  .a:active {
+    text-decoration: none
+  }
+  .button{
+    background-color: red;
+    border-radius: 8px;
+    border: none;
+   
+    cursor: pointer;
+}
+@media screen and (max-width:500px) {
+  .badge{
+    font-size:9px;
+    padding:6px;
+  }
+  .repos{
+    margin:4px;
+    flex-direction: column;
+  }
+  .name{
+    font-weight: 600;
+    font-size:15px;
+  }
+  .button{
+    font-size: 11px;
+  }
+}

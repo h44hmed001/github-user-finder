@@ -1,0 +1,99 @@
+.container{
+    border: 1px solid red;
+    
+}
+.imageCont{
+    position: relative;
+    width:100px;
+    height:100px;
+}
+.avatar{
+   object-fit: cover;
+   border-radius: 50%;
+}
+.button{
+    background-color: red;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+.button:active{
+    transform: scale(.9);
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.container{
+    display: flex;
+}
+.badges{
+    display: flex;
+    gap:10px;
+}
+.badge{
+    background-color: red;
+    border-radius: 10px;
+}
+.name{
+    font-size: 20px;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+
+ 
+}
+.bio{
+    font-weight: 700;
+    color:rgb(236, 235, 235)
+}
+.a:link {
+    text-decoration: none;
+    color:white
+  }
+  
+  .a:visited {
+    text-decoration: none;
+    color:white;
+  }
+  
+  .a:hover {
+    text-decoration: none;
+  }
+  
+  .a:active {
+    text-decoration: none
+  }
+  @media screen and (max-width:500px) {
+    .imageCont{
+        width: 40px;
+        height:40px;
+    }
+    .container{
+        width: fit-content;
+        display: flex;
+        flex-direction:column
+    }
+    .button{
+        width:fit-content;
+        font-size: 9px;
+    }
+    .left{
+        gap:5px;
+    }
+    .badge{
+        font-size: 9px;
+    }
+    .field{
+        font-size: 12px;
+    }
+    .name{
+        font-size:12px;
+    }
+    .bio{
+        font-size:12px;
+    }
+  }
